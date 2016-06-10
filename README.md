@@ -1,6 +1,6 @@
 ## Synopsis
 
-This shows examples of molecule structures.
+This shows examples of molecular structures.
 
 ## Installation
 
