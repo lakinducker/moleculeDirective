@@ -135,29 +135,29 @@ angular.module('moleculeDirective')
               .append("line")
               .style("stroke-width", function(d) { return ((d.bond - 2) * 2 - 1) * 2 + "px"; });
           
-          indicator = svg.selectAll(".indicator")
-              .data(graph.links)
-              .enter().append("g")
-              .attr("class", "indicator");
+          // indicator = svg.selectAll(".indicator")
+          //     .data(graph.links)
+          //     .enter().append("g")
+          //     .attr("class", "indicator");
           
-          indicator.append('circle')
-              .attr('r', '20px');
+          // indicator.append('circle')
+          //     .attr('r', '20px');
           
-          indicator.append('text')
-              .attr("dy", ".35em")
-              .attr("text-anchor", "middle");
+          // indicator.append('text')
+          //     .attr("dy", ".35em")
+          //     .attr("text-anchor", "middle");
           
-          brokenIndicator = svg.selectAll(".bro")
-              .data(brokenBonds)
-              .enter().append("g")
-              .attr("class", "broken-indicator");
+          // brokenIndicator = svg.selectAll(".bro")
+          //     .data(brokenBonds)
+          //     .enter().append("g")
+          //     .attr("class", "broken-indicator");
           
-          brokenIndicator.append('circle')
-              .attr('r', '20px');
+          // brokenIndicator.append('circle')
+          //     .attr('r', '20px');
           
-          brokenIndicator.append('text')
-              .attr("dy", ".35em")
-              .attr("text-anchor", "middle");
+          // brokenIndicator.append('text')
+          //     .attr("dy", ".35em")
+          //     .attr("text-anchor", "middle");
 
           node = svg.selectAll(".node")
               .data(graph.nodes)
