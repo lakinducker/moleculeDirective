@@ -1,6 +1,6 @@
 ## Synopsis
 
-This shows examples of various data visualizations.
+This shows examples of molecule structures.
 
 ## Installation
 
