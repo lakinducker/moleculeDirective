@@ -80,3 +80,54 @@ h1{
     pointer-events: none;
 }
 /* end section Molecule Diagram Styles */
+
+
+
+
+/* Reactions Styles */
+.console {
+  /*position: fixed;*/
+  top: 0;
+  left: 0;
+  padding: 15px;
+  background: rgba(53, 175, 240, 0.6);
+  border-right: 2px solid rgba(0, 68, 196, 0.81);
+  border-bottom: 2px solid rgba(0, 68, 196, 0.81);
+  border-bottom-right-radius: 45px; }
+  /* line 180, /Users/Chris/Development/NextGenLessons/Reactions/css/style.scss */
+  .console a {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin-left: 5px; }
+    /* line 192, /Users/Chris/Development/NextGenLessons/Reactions/css/style.scss */
+    .console a#add-hydrogen {
+      width: 24px;
+      height: 24px;
+      padding-top: 1px;
+      background: #2ca02c; }
+    /* line 199, /Users/Chris/Development/NextGenLessons/Reactions/css/style.scss */
+    .console a#add-carbon {
+      width: 53px;
+      height: 53px;
+      padding-top: 16px;
+      background: #1F77B4; }
+    /* line 206, /Users/Chris/Development/NextGenLessons/Reactions/css/style.scss */
+    .console a#add-nitrogen {
+      width: 57px;
+      height: 57px;
+      padding-top: 18px;
+      background: #ff7f0e; }
+    /* line 213, /Users/Chris/Development/NextGenLessons/Reactions/css/style.scss */
+    .console a#add-oxygen {
+      width: 60px;
+      height: 60px;
+      padding-top: 20px;
+      background: #d62728; }
+
+/* end Reactions Styles */

@@ -3,7 +3,8 @@
 angular.module('moleculeDirective')
   .directive('reactions', function () {
     return {
-      template: '<div class="reactions-area"></div>',
+      templateUrl: 'common/directives/reactions.html',
+      // template: '<div class="reactions-area"></div>',
       restrict: 'EA',
       //link: function (scope, element, attrs) {
       //}
@@ -56,15 +57,7 @@ angular.module('moleculeDirective')
 
         var svg = d3.select(".reactions-area").append("svg")
           .attr("width", width)
-          .attr("height", height);
-
-       svg.append("text")
-          .attr("x", (width / 2))             
-          .attr("y", 20)
-          .attr("text-anchor", "middle")  
-          .style("font-size", "16px") 
-          .style("text-decoration", "underline")  
-          .text("Reactions");   
+          .attr("height", height); 
 
         var stableBondLength = 25;
 
