@@ -11,9 +11,8 @@ angular.module('moleculeDirective')
         formula: '='
       },
       controller: function($scope) {
-        console.log($scope.formula);
 
-
+        // Data of molecules
         var moleculesArray = [
           {
             "moleculeId": 1,
@@ -417,17 +416,16 @@ angular.module('moleculeDirective')
           }
         ];
 
+        var moleculeTitle = '';
         var graph = {"nodes": [], "links": []};
+
+        // Find the molecule that matches the structure property
         for (var i = 0; i < moleculesArray.length; i++) {
           if (moleculesArray[i].formula === $scope.formula) {
-            console.log(moleculesArray[i].structure);
+            moleculeTitle = moleculesArray[i].moleculeName + ' (' + moleculesArray[i].formula + ')';
             graph = moleculesArray[i].structure;
           }
         }
-        console.log(graph);
-
-        // var width = 960,
-        //     height = 500;
 
         var width = 500,
           height = 400;
@@ -440,6 +438,14 @@ angular.module('moleculeDirective')
         var svg = d3.select(".molecule-diagram-area").append("svg")
           .attr("width", width)
           .attr("height", height);
+
+       svg.append("text")
+          .attr("x", (width / 2))             
+          .attr("y", 20)
+          .attr("text-anchor", "middle")  
+          .style("font-size", "16px") 
+          .style("text-decoration", "underline")  
+          .text(moleculeTitle);   
 
         var force = d3.layout.force()
           .size([width, height])
