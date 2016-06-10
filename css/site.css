@@ -60,7 +60,7 @@ h1{
 
 
 
-
+/* Molecule Diagram Styles */
 .link line {
     stroke: #696969;
 }
@@ -79,3 +79,4 @@ h1{
     font: 10px sans-serif;
     pointer-events: none;
 }
+/* end section Molecule Diagram Styles */

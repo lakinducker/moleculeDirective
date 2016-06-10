@@ -14,13 +14,20 @@
 
             $stateProvider
 
-                // DataMap
                 .state("moleculeDiagram", {
                   url: "/",
                   templateUrl: "app/molecules/moleculeDiagram.html",
                   controller: "MoleculeDiagramCtrl",
                   controllerAs: 'vm'
                 })
+            
+                .state("reactions", {
+                  url: "/reactions",
+                  templateUrl: "app/molecules/reactions.html",
+                  controller: "ReactionsCtrl",
+                  controllerAs: 'vm'
+                })
+
 
 
 
