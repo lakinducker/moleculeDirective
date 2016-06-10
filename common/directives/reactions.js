@@ -144,11 +144,11 @@ angular.module('moleculeDirective')
           
           indicator = svg.selectAll(".indicator")
               .data(graph.links)
-            .enter().append("g")
+              .enter().append("g")
               .attr("class", "indicator");
           
           indicator.append('circle')
-                  .attr('r', '20px');
+              .attr('r', '20px');
           
           indicator.append('text')
               .attr("dy", ".35em")
@@ -156,11 +156,11 @@ angular.module('moleculeDirective')
           
           brokenIndicator = svg.selectAll(".bro")
               .data(brokenBonds)
-            .enter().append("g")
+              .enter().append("g")
               .attr("class", "broken-indicator");
           
           brokenIndicator.append('circle')
-                  .attr('r', '20px');
+              .attr('r', '20px');
           
           brokenIndicator.append('text')
               .attr("dy", ".35em")
@@ -168,7 +168,7 @@ angular.module('moleculeDirective')
 
           node = svg.selectAll(".node")
               .data(graph.nodes)
-            .enter().append("g")
+              .enter().append("g")
               .attr("class", "node")
               .call(force.drag);
 
